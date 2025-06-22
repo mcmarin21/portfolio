@@ -1,1 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap');
 @import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+@theme inline{
+    /* Tipografía */
+    --font-body: 'Montserrat', sans-serif;
+    --font-heading: 'Taviraj', serif;
+    --font-display: 'Bagel Fat One', sans-serif;
+
+    /* Tamaños de fuente */
+    --text-xs: 0.64rem;
+    --text-sm: 0.8rem;
+    --text-base: 1rem;
+    --text-base--line-height: 1.6rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: 1.8rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: 2.2rem;
+    --text-2xl: 1.563rem;
+    --text-2xl--line-height: 2.5rem;
+    --text-3xl: 1.953rem;
+    --text-3xl--line-height: 3rem;
+    --text-4xl: 2.441rem;
+    --text-4xl--line-height: 3rem;
+    --text-5xl: 3.052rem;
+    --text-5xl--line-height: 3.25rem;
+    --text-6xl: 3.815rem;
+    --text-6xl--line-height: 4.375rem;
+    --text-7xl: 4.769rem;
+    --text-7xl--line-height: 5.375rem;
+    --text-8xl: 5.961rem;
+    --text-8xl--line-height: 6.375rem;
+    --text-9xl: 7.451rem;
+    --text-9xl--line-height: 8.25rem;
+
+    /* Colores */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary-container: var(--primary-container);
+    --color-primary-container-foreground: var(--primary-container-foreground);
+    --color-primary-border: var(--primary-border);
+
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary-container: var(--secondary-container);
+    --color-secondary-container-foreground: var(--secondary-container-foreground);
+    --color-secondary-border: var(--secondary-border);
+
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent-container: var(--accent-container);
+    --color-accent-container-foreground: var(--accent-container-foreground);
+    --color-accent-border: var(--accent-border);
+
+    --color-danger: var(--danger);
+    --color-danger-foreground: var(--danger-foreground);
+    --color-danger-container: var(--danger-container);
+    --color-danger-container-foreground: var(--danger-container-foreground);
+    --color-danger-border: var(--danger-border);
+
+    --color-warning: var(--warning);
+    --color-warning-foreground: var(--warning-foreground);
+    --color-warning-container: var(--warning-container-foreground);
+    --color-warning-container-foreground: var(--warning-container-foreground);
+    --color-warning-border: var(--warning-border);
+
+    --color-elevation-0: var(--elevation-0);
+    --color-elevation-1: var(--elevation-1);
+    --color-elevation-2: var(--elevation-2);
+    --color-elevation-3: var(--elevation-3);
+
+    --color-border: var(--border);
+
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted-border: var(--muted-border);
+
+    --color-shadow: var(--shadow);
+
+}
+
+:root{
+    /*Colores*/
+    --background: hsla(194, 85%, 98%, 1);
+    --foreground: hsla(194, 100%, 5%, 1);
+
+    --primary: hsla(0, 0%, 100%);
+    --primary-foreground: hsla(0, 0%, 0%);
+    --primary-container: hsla(0, 0%, 0%);
+    --primary-container-foreground: hsla(0, 0%, 100%);
+    --primary-border: hsla(0, 0%, 0%);
+
+    --secondary: hsla(0, 0%, 100%);
+    --secondary-foreground: hsla(0, 0%, 0%);
+    --secondary-container: hsla(0, 0%, 0%);
+    --secondary-container-foreground: hsla(0, 0%, 100%);
+    --secondary-border: hsla(0, 0%, 0%);
+
+    --accent: hsla(0, 0%, 0%);
+    --accent-foreground: hsla(0, 0%, 100%);
+    --accent-container: hsla(0, 0%, 100%);
+    --accent-container-foreground: hsla(0, 0%, 0%);
+    --accent-border: hsla(0, 0%, 0%);
+
+    --danger: hsla(0, 0%, 0%);
+    --danger-foreground: hsla(0, 0%, 100%);
+    --danger-container: hsla(0, 0%, 100%);
+    --danger-container-foreground: hsla(0, 0%, 0%);
+    --danger-border: hsla(0, 0%, 0%);
+
+    --warning: hsla(0, 0%, 0%);
+    --warning-foreground: hsla(0, 0%, 100%);
+    --warning-container: hsla(0, 0%, 100%);
+    --warning-container-foreground: hsla(0, 0%, 0%);
+    --warning-border: hsla(0, 0%, 0%);
+
+    --elevation-0: hsla(0, 0%, 0%);
+    --elevation-1: hsla(0, 0%, 100%);
+    --elevation-2: hsla(0, 0%, 100%);
+    --elevation-3: hsla(0, 0%, 100%);
+
+    --border: hsla(0, 0%, 0%);
+
+    --muted: hsla(0, 0%, 100%);
+    --muted-foreground: hsla(0, 0%, 0%);
+    --muted-border: hsla(0, 0%, 0%);
+
+    --shadow: hsla(0, 0%, 0%);
+}
+
+.dark{
+    --background: hsla(0, 0%, 100%);
+    --foreground: hsla(0, 0%, 0%);
+
+    --primary: hsla(0, 0%, 100%);
+    --primary-foreground: hsla(0, 0%, 0%);
+    --primary-container: hsla(0, 0%, 0%);
+    --primary-container-foreground: hsla(0, 0%, 100%);
+    --primary-border: hsla(0, 0%, 0%);
+
+    --secondary: hsla(0, 0%, 100%);
+    --secondary-foreground: hsla(0, 0%, 0%);
+    --secondary-container: hsla(0, 0%, 0%);
+    --secondary-container-foreground: hsla(0, 0%, 100%);
+    --secondary-border: hsla(0, 0%, 0%);
+
+    --accent: hsla(0, 0%, 0%);
+    --accent-foreground: hsla(0, 0%, 100%);
+    --accent-container: hsla(0, 0%, 100%);
+    --accent-container-foreground: hsla(0, 0%, 0%);
+    --accent-border: hsla(0, 0%, 0%);
+
+    --error: hsla(0, 0%, 0%);
+    --error-foreground: hsla(0, 0%, 100%);
+    --error-container: hsla(0, 0%, 100%);
+    --error-container-foreground: hsla(0, 0%, 0%);
+    --error-border: hsla(0, 0%, 0%);
+
+    --warning: hsla(0, 0%, 0%);
+    --warning-foreground: hsla(0, 0%, 100%);
+    --warning-container: hsla(0, 0%, 100%);
+    --warning-container-foreground: hsla(0, 0%, 0%);
+    --warning-border: hsla(0, 0%, 0%);
+
+    --elevation-0: hsla(0, 0%, 0%);
+    --elevation-1: hsla(0, 0%, 100%);
+    --elevation-2: hsla(0, 0%, 100%);
+    --elevation-3: hsla(0, 0%, 100%);
+
+    --border: hsla(0, 0%, 0%);
+
+    --muted: hsla(0, 0%, 100%);
+    --muted-foreground: hsla(0, 0%, 0%);
+    --muted-border: hsla(0, 0%, 0%);
+
+    --shadow: hsla(0, 0%, 0%);
+}
