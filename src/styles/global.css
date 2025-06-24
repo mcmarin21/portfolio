@@ -200,7 +200,7 @@ h5{
 }
 
 h6{
-    @apply text-4xl;
+    @apply text-3xl;
 }
 
 ::selection{

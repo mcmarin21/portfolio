@@ -4,9 +4,12 @@ import Header from "../components/Header.astro";
 import Pill from "../components/Pill.astro";
 import Image from 'astro/components/Image.astro';
 import img from "../assets/images/CarlosLanding.jpg"
+import { getCollection } from 'astro:content';
+import ProjectCard from "../layouts/ProjectCard.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const projects = await getCollection('projects');
+
+projects.sort((a,b) => b.data.startDate.valueOf() - a.data.startDate.valueOf(),)
 ---
 
 <PageLayout title="Carlos Marin">
@@ -18,6 +21,20 @@ import img from "../assets/images/CarlosLanding.jpg"
         <p class="text-xl">
             Desarrollador web y diseñador UI/UX
         </p>
+    </section>
+
+    <section class="flex flex-col gap-5 px-16 py-6">
+        <h6>
+            Proyectos
+        </h6>
+        <div class="flex flex-row gap-4 items-center overflow-x-auto">
+            {
+                projects.map((project) => (
+                        <ProjectCard {...project.data} />
+                    )
+                )
+            }
+        </div>
     </section>
 
     <section class="flex flex-row items-center justify-between px-16 py-4">

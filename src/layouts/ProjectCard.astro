@@ -1,0 +1,48 @@
+---
+import Image from "astro/components/Image.astro";
+import {getCollection, reference, z} from "astro:content";
+import Pill from "../components/Pill.astro";
+import type { ReferenceDataEntry } from "astro:content";
+
+interface Props{
+    title: string,
+    description: string,
+    image?: string,
+    startDate: Date,
+    endDate?: Date,
+    technologies: ReferenceDataEntry<"technologies", string>[],
+    role: string[],
+    company?: string,
+    url?: string,
+    github?: string,
+}
+
+
+const {title, description, image, startDate, endDate, technologies, role, company, url, github} = Astro.props;
+
+const allTechnologies = await getCollection("technologies");
+
+---
+
+<article class="px-6 py-5 bg-elevation-1 rounded-xl border border-foreground max-w-1/4">
+    <img src={image} alt={"Ilustracion del projecto " + title} class="w-full object-cover aspect-video rounded-xl" />
+    <p class="text-xl font-semibold">
+        {title}
+    </p>
+    <div class="flex flex-row">
+        {
+            technologies.map((tech) => {
+                const display = allTechnologies.find(t => t.id === tech.id);
+                return display && (
+                        <Pill>
+                            {display.data.name}
+                        </Pill>
+                )
+
+            })
+        }
+    </div>
+    <p class="text-base">
+        {description}
+    </p>
+</article>
