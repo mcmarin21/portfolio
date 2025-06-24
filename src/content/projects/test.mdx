@@ -1,0 +1,19 @@
+---
+title: Test Project
+description: This is a test project to demonstrate the structure of a project page.
+image:
+startDate:
+endDate:
+technologies: []
+role:
+company:
+---
+
+title: z.string(),
+description: z.string(),
+image: z.string().optional(),
+startDate: z.date(),
+endDate: z.date().optional(),
+technologies: z.array(z.string()), //TODO: Link to a technology collection
+role: z.array(z.string()),
+company: z.string().optional(),
