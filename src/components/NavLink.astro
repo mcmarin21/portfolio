@@ -13,5 +13,5 @@ const isActive = pathname === href || href === '/' + subpath?.[0];
 
 <a href={href} class={cn(className, "group flex flex-col items-center my-2 transition-transform hover:-translate-y-0.5 select-none", isActive ? 'text-accent' : 'text-foreground')} {...props}>
     <slot />
-    <div class="bg-primary h-[2px] rounded-full w-0 group-hover:w-full transition-all duration-350 ease-out"></div>
+    <div class={cn("bg-primary h-[2px] rounded-full w-0 group-hover:w-full transition-all duration-350 ease-out", isActive ? "w-full bg-accent" : '')}></div>
 </a>
