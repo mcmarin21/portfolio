@@ -12,6 +12,8 @@ const projects = defineCollection({
         technologies: z.array(reference("technologies")),
         role: z.array(z.string()),
         company: z.string().optional(),
+        url: z.string().optional(),
+        github: z.string().optional(),
     })
 })
 
