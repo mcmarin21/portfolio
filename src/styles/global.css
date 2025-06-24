@@ -170,3 +170,35 @@
 
     /*--shadow: hsla(0, 0%, 0%);*/
 }
+
+p, a{
+    @apply font-body text-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+}
+
+h1{
+    @apply text-9xl;
+}
+
+h2{
+    @apply text-8xl;
+}
+
+h3{
+    @apply text-7xl;
+}
+
+h4{
+    @apply text-6xl;
+}
+
+h5{
+    @apply text-5xl;
+}
+
+h6{
+    @apply text-4xl;
+}
