@@ -37,145 +37,136 @@
     /* Colores */
     --color-background: var(--background);
     --color-foreground: var(--foreground);
+    --color-muted: var(--muted);
 
     --color-primary: var(--primary);
     --color-primary-foreground: var(--primary-foreground);
     --color-primary-container: var(--primary-container);
     --color-primary-container-foreground: var(--primary-container-foreground);
-    --color-primary-border: var(--primary-border);
 
     --color-secondary: var(--secondary);
     --color-secondary-foreground: var(--secondary-foreground);
     --color-secondary-container: var(--secondary-container);
     --color-secondary-container-foreground: var(--secondary-container-foreground);
-    --color-secondary-border: var(--secondary-border);
 
     --color-accent: var(--accent);
     --color-accent-foreground: var(--accent-foreground);
     --color-accent-container: var(--accent-container);
     --color-accent-container-foreground: var(--accent-container-foreground);
-    --color-accent-border: var(--accent-border);
 
-    --color-danger: var(--danger);
-    --color-danger-foreground: var(--danger-foreground);
-    --color-danger-container: var(--danger-container);
-    --color-danger-container-foreground: var(--danger-container-foreground);
-    --color-danger-border: var(--danger-border);
+    /*--color-danger: var(--danger);*/
+    /*--color-danger-foreground: var(--danger-foreground);*/
+    /*--color-danger-container: var(--danger-container);*/
+    /*--color-danger-container-foreground: var(--danger-container-foreground);*/
+    /*--color-danger-border: var(--danger-border);*/
 
-    --color-warning: var(--warning);
-    --color-warning-foreground: var(--warning-foreground);
-    --color-warning-container: var(--warning-container-foreground);
-    --color-warning-container-foreground: var(--warning-container-foreground);
-    --color-warning-border: var(--warning-border);
+    /*--color-warning: var(--warning);*/
+    /*--color-warning-foreground: var(--warning-foreground);*/
+    /*--color-warning-container: var(--warning-container-foreground);*/
+    /*--color-warning-container-foreground: var(--warning-container-foreground);*/
+    /*--color-warning-border: var(--warning-border);*/
 
-    --color-elevation-0: var(--elevation-0);
     --color-elevation-1: var(--elevation-1);
     --color-elevation-2: var(--elevation-2);
     --color-elevation-3: var(--elevation-3);
 
-    --color-border: var(--border);
+    /*--color-border: var(--border);*/
 
-    --color-muted: var(--muted);
-    --color-muted-foreground: var(--muted-foreground);
-    --color-muted-border: var(--muted-border);
+    /*--color-muted: var(--muted);*/
+    /*--color-muted-foreground: var(--muted-foreground);*/
+    /*--color-muted-border: var(--muted-border);*/
 
-    --color-shadow: var(--shadow);
+    /*--color-shadow: var(--shadow);*/
 
 }
 
 :root{
     /*Colores*/
-    --background: hsla(194, 85%, 98%, 1);
-    --foreground: hsla(194, 100%, 5%, 1);
+    --background: hsla(180, 10%, 96%, 1);
+    --foreground: hsla(196, 14%, 15%, 1);
+    --muted: hsla(199, 14%, 78%, 1);
 
-    --primary: hsla(0, 0%, 100%);
-    --primary-foreground: hsla(0, 0%, 0%);
-    --primary-container: hsla(0, 0%, 0%);
-    --primary-container-foreground: hsla(0, 0%, 100%);
-    --primary-border: hsla(0, 0%, 0%);
+    --primary: hsla(194, 100%, 48%, 1);
+    --primary-foreground: hsla(194, 100%, 9%, 1);
+    --primary-container: hsla(195, 100%, 74%, 1);
+    --primary-container-foreground: hsla(193, 100%, 15%, 1);
 
-    --secondary: hsla(0, 0%, 100%);
-    --secondary-foreground: hsla(0, 0%, 0%);
-    --secondary-container: hsla(0, 0%, 0%);
-    --secondary-container-foreground: hsla(0, 0%, 100%);
-    --secondary-border: hsla(0, 0%, 0%);
+    --secondary: hsla(194, 85%, 68%, 1);
+    --secondary-foreground: hsla(194, 100%, 9%, 1);
+    --secondary-container: hsla(194, 84%, 90%, 1);
+    --secondary-container-foreground: hsla(194, 85%, 28%, 1);
 
-    --accent: hsla(0, 0%, 0%);
-    --accent-foreground: hsla(0, 0%, 100%);
-    --accent-container: hsla(0, 0%, 100%);
-    --accent-container-foreground: hsla(0, 0%, 0%);
-    --accent-border: hsla(0, 0%, 0%);
+    --accent: hsla(12, 99%, 64%, 1);
+    --accent-foreground: hsla(196, 14%, 15%, 1);
+    --accent-container: hsla(12, 98%, 80%, 1);
+    --accent-container-foreground: hsla(12, 99%, 40%, 1);
 
-    --danger: hsla(0, 0%, 0%);
-    --danger-foreground: hsla(0, 0%, 100%);
-    --danger-container: hsla(0, 0%, 100%);
-    --danger-container-foreground: hsla(0, 0%, 0%);
-    --danger-border: hsla(0, 0%, 0%);
+    /*--danger: hsla(0, 0%, 0%);*/
+    /*--danger-foreground: hsla(0, 0%, 100%);*/
+    /*--danger-container: hsla(0, 0%, 100%);*/
+    /*--danger-container-foreground: hsla(0, 0%, 0%);*/
+    /*--danger-border: hsla(0, 0%, 0%);*/
 
-    --warning: hsla(0, 0%, 0%);
-    --warning-foreground: hsla(0, 0%, 100%);
-    --warning-container: hsla(0, 0%, 100%);
-    --warning-container-foreground: hsla(0, 0%, 0%);
-    --warning-border: hsla(0, 0%, 0%);
+    /*--warning: hsla(0, 0%, 0%);*/
+    /*--warning-foreground: hsla(0, 0%, 100%);*/
+    /*--warning-container: hsla(0, 0%, 100%);*/
+    /*--warning-container-foreground: hsla(0, 0%, 0%);*/
+    /*--warning-border: hsla(0, 0%, 0%);*/
 
-    --elevation-0: hsla(0, 0%, 0%);
-    --elevation-1: hsla(0, 0%, 100%);
-    --elevation-2: hsla(0, 0%, 100%);
-    --elevation-3: hsla(0, 0%, 100%);
+    --elevation-1: hsla(192, 12%, 92%, 1);
+    --elevation-2: hsla(198, 14%, 86%, 1);
+    --elevation-3: hsla(199, 14%, 78%, 1);
 
-    --border: hsla(0, 0%, 0%);
+    /*--border: ;*/
 
-    --muted: hsla(0, 0%, 100%);
-    --muted-foreground: hsla(0, 0%, 0%);
-    --muted-border: hsla(0, 0%, 0%);
+    /*--muted: ;*/
+    /*--muted-foreground: ;*/
+    /*--muted-border: ;*/
 
-    --shadow: hsla(0, 0%, 0%);
+    /*--shadow: ;*/
 }
 
 .dark{
-    --background: hsla(0, 0%, 100%);
-    --foreground: hsla(0, 0%, 0%);
+    --background: hsla(196, 14%, 15%, 1);
+    --foreground: hsla(180, 10%, 96%, 1);
+    --muted: hsla(199, 14%, 78%, 1);
 
-    --primary: hsla(0, 0%, 100%);
-    --primary-foreground: hsla(0, 0%, 0%);
-    --primary-container: hsla(0, 0%, 0%);
-    --primary-container-foreground: hsla(0, 0%, 100%);
-    --primary-border: hsla(0, 0%, 0%);
+    --primary: hsla(194, 100%, 44%, 1);
+    --primary-foreground: hsla(194, 100%, 9%, 1);
+    --primary-container: hsla(195, 100%, 86%, 1);
+    --primary-container-foreground: hsla(193, 100%, 15%, 1);
 
-    --secondary: hsla(0, 0%, 100%);
-    --secondary-foreground: hsla(0, 0%, 0%);
-    --secondary-container: hsla(0, 0%, 0%);
-    --secondary-container-foreground: hsla(0, 0%, 100%);
-    --secondary-border: hsla(0, 0%, 0%);
+    --secondary: hsla(194, 85%, 48%, 1);
+    --secondary-foreground: hsla(194, 100%, 9%, 1);
+    --secondary-container: hsla(194, 84%, 80%, 1);
+    --secondary-container-foreground: hsla(195, 85%, 18%, 1);
 
-    --accent: hsla(0, 0%, 0%);
-    --accent-foreground: hsla(0, 0%, 100%);
-    --accent-container: hsla(0, 0%, 100%);
-    --accent-container-foreground: hsla(0, 0%, 0%);
-    --accent-border: hsla(0, 0%, 0%);
+    --accent: hsla(12, 99%, 59%, 1);
+    --accent-foreground: hsla(196, 14%, 15%, 1);
+    --accent-container: hsla(12, 100%, 90%, 1);
+    --accent-container-foreground: hsla(12, 99%, 40%, 1);
 
-    --error: hsla(0, 0%, 0%);
-    --error-foreground: hsla(0, 0%, 100%);
-    --error-container: hsla(0, 0%, 100%);
-    --error-container-foreground: hsla(0, 0%, 0%);
-    --error-border: hsla(0, 0%, 0%);
+    /*--danger: hsla(0, 0%, 0%);*/
+    /*--danger-foreground: hsla(0, 0%, 100%);*/
+    /*--danger-container: hsla(0, 0%, 100%);*/
+    /*--danger-container-foreground: hsla(0, 0%, 0%);*/
+    /*--danger-border: hsla(0, 0%, 0%);*/
 
-    --warning: hsla(0, 0%, 0%);
-    --warning-foreground: hsla(0, 0%, 100%);
-    --warning-container: hsla(0, 0%, 100%);
-    --warning-container-foreground: hsla(0, 0%, 0%);
-    --warning-border: hsla(0, 0%, 0%);
+    /*--warning: hsla(0, 0%, 0%);*/
+    /*--warning-foreground: hsla(0, 0%, 100%);*/
+    /*--warning-container: hsla(0, 0%, 100%);*/
+    /*--warning-container-foreground: hsla(0, 0%, 0%);*/
+    /*--warning-border: hsla(0, 0%, 0%);*/
 
-    --elevation-0: hsla(0, 0%, 0%);
-    --elevation-1: hsla(0, 0%, 100%);
-    --elevation-2: hsla(0, 0%, 100%);
-    --elevation-3: hsla(0, 0%, 100%);
+    --elevation-1: hsla(197, 14%, 20%, 1);
+    --elevation-2: hsla(198, 13%, 25%, 1);
+    --elevation-3: hsla(197, 14%, 30%, 1);
 
-    --border: hsla(0, 0%, 0%);
+    /*--border: hsla(0, 0%, 0%);*/
 
-    --muted: hsla(0, 0%, 100%);
-    --muted-foreground: hsla(0, 0%, 0%);
-    --muted-border: hsla(0, 0%, 0%);
+    /*--muted: hsla(0, 0%, 100%);*/
+    /*--muted-foreground: hsla(0, 0%, 0%);*/
+    /*--muted-border: hsla(0, 0%, 0%);*/
 
-    --shadow: hsla(0, 0%, 0%);
+    /*--shadow: hsla(0, 0%, 0%);*/
 }
