@@ -9,7 +9,7 @@ const projects = defineCollection({
         image: z.string().optional(),
         startDate: z.date(),
         endDate: z.date().optional(),
-        technologies: reference("technologies"),
+        technologies: z.array(reference("technologies")),
         role: z.array(z.string()),
         company: z.string().optional(),
     })
