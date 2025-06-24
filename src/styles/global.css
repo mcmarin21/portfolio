@@ -172,7 +172,7 @@
 }
 
 p, a{
-    @apply font-body text-base;
+    @apply font-body;
 }
 
 h1, h2, h3, h4, h5, h6 {

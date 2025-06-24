@@ -1,6 +1,9 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import Header from "../components/Header.astro";
+import Pill from "../components/Pill.astro";
+import Image from 'astro/components/Image.astro';
+import img from "../assets/images/CarlosLanding.jpg"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -8,39 +11,30 @@ import Header from "../components/Header.astro";
 
 <PageLayout title="Carlos Marin">
 
-    <div class="flex flex-col items-center">
+    <section class="flex flex-col items-center justify-center px-4 py-4 gap-2 h-96 bg-primary/10">
         <h4>
-            Titulo de prueba
+            Hola 👋, soy <span class="font-display text-primary">Carlos Marin</span>
         </h4>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        <p class="text-xl">
+            Desarrollador web y diseñador UI/UX
         </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-        <p class="w-1/3 my-5 text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
-    </div>
+    </section>
+
+    <section class="flex flex-row items-center justify-between px-16 py-4">
+        <div class="flex flex-col gap-2 w-1/2">
+            <h6>
+                Carlos Andres Marin
+            </h6>
+            <div class="flex flex-row gap-4">
+                <Pill>
+                    React
+                </Pill>
+            </div>
+            <p>
+                Soy estudiante del CECyT 9 “Juan de Dios Bátiz” en Técnico en Programación, capacitado para trabajar en el desarrollo de aplicaciones web mediante el uso de React para el front-end ya sea con TypeScript o JavaScript. Así como conocimiento de diversas arquitecturas utilizadas para el desarrollo de estas aplicaciones, como lo son SSR, PWA, SPA. Implementando metodologías y herramientas para el trabajo colaborativo en el desarrollo de proyectos.
+            </p>
+        </div>
+        <Image src={img} alt="Imagen de Carlos Marin" class="object-cover w-1/4 aspect-square rounded-2xl"  />
+    </section>
+
 </PageLayout>
